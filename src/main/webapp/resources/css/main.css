@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{ margin:0; padding:0;}
+li{ list-style-type:none;}
+a{ text-decoration:none;}
+img{ display:block; border:0;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear{ clear:both;}
+.b_black{ background:#555;}
+.b_black:hover{ background:#4b4b4b;}
+.b_green{ background:#2e8965;}
+.b_green:hover{ background:#2c7659;}
+.b_purple{ background:#892e65;}
+.b_purple:hover{ background:#762c59;}
+.b_orange{ background:#f56c0b;}
+.b_orange:hover{ background:#F60;}
+
+
+
+body{ font-family:微软雅黑; overflow-x:hidden;}
+
+.header_top11111{ width:100%; height:45px; background:#12d2ea; position:relative; }
+
+
+
+#header{ width:100%; height:91px; -min-width:1200px;}
+.header_top{ width:100%; height:65px; background:#09C; position:relative; }
+.header_nav{ width:100%; height:45px; background:#e5e5e5; position:relative; border-bottom: 1px solid #b5b5b5;}
+.header_info{ float:left; padding:0 40px; line-height:45px;}
+.sidebar{ width:190px; height:45px; border-right:1px solid #ccc; float:left;}
+.sidebar_left{ font-size: 24px; color: #fff;width:33px; height:24px; line-height:24px; background:#629b58; text-align:center; margin:7px 0 0 40px; border:4px solid #629b58;}
+.sidebar_right{ font-size: 24px; color: #fff;width:33px; height:24px; line-height:24px; background:#f0ad4e; text-align:center; margin:7px 0 0 25px; border:4px solid #f0ad4e;}
+.sidebar_left:hover{ background:#87b87f;}
+.sidebar_right:hover{ background:#ffb752;}
+.horizontal_nav{ float:right;}
+.horizontal_nav li{ width:74px; height:65px; border-right:1px solid #fff; float:left; -background:#bfbfbf; position:relative; text-align:center;}
+.horizontal_nav li a{ display:inline-block; width:100%; height:100%;}
+.horizontal_nav_icon{color: #fff;font-size: 22px; text-align:center; margin: 10px 0 5px 0;}
+.horizontal_nav_num{ color:#fff; font-size: 14px; text-align:center;}
+.horizontal_nav .horizontal_user{ width:auto; margin-left:0; margin-right: 11px; text-align:center; line-height:65px; padding:0 10px; background:#62a8d1;}
+.horizontal_nav .horizontal_user:hover{ background:#438eb9;}
+.horizontal_nav_icon_user{color: #fff;font-size:35px;line-height: 65px; float:left;}
+.horizontal_nav_slide{color: #fff; margin:26px 6px 0;}
+
+.topa{ position:absolute; width:1196px; height:82px; left:0px; top:0; }
+
+.header_lbox{ float:left; height:45px;}
+#logo{ float:left; margin-top:0px;}
+#logo img{ height:60px; margin: 0px 0 0 40px; display:inline; float:left;}
+#logo a{ color:#fff; line-height:35px; font-size: 20px;}
+.logo_font{ margin: 16px 0 0 14px; display:block; float:left;  font-family:宋体; font-size:28px; font-weight:bold;}
+.welcome{ float:left; padding:17px 0 0 30px;}
+
+.header_right{ float:right; height:45px; width:506px; position:relative;}
+.header_rbox{ height:24px; position:absolute; top:10px; right:35px;}
+.header_h1{  width:68px; height:24px; background:url(../images/header_an.png) no-repeat 0 0; font-size:14px; color:#fff; text-align:center;  margin-right:4px;}
+.header_h2{ width:93px; height:24px; background:url(../images/header_an.png) no-repeat 0 -24px; font-size:14px; color:#fff; text-align:center; margin-right:4px;}
+.header_h1 a,.header_h2 a{ color:#fff; width:100%; height:100%; display:block;}
+
+
+
+#nav{ height:24px;  background:url(../images/nav_bg.png) repeat-x 0 0; padding-left:50px;}
+#nav li{ line-height:24px; float:left; margin-right:66px;}
+#nav li a{ color:#fff; font-size:14px;}
+#nav li a:hover{ color:#f5c01e; font-size:14px;}
+
+
+
+/*tree*/
+
+
+#tree{ width:190px; position:relative; overflow:-hidden; border-right:1px solid #ccc;}
+.tree_bg{ width:260px; height:276px; background:#fff; position:absolute; top:0; left:0;}
+
+.tree_box{ width:190px; float:left; position:relative; font-size:13px;}
+.tree_box_active{ border-right:1px solid #2b7dbc;}
+.tree_box_show{ display: block;content: "";position: absolute;right: 0;top: 4px;border: 8px solid transparent;border-width: 14px 10px;border-right-color: #2b7dbc;}
+.tree_box a{ text-align:left; padding-left:37px;}
+.tree_box .tree_fir{ text-align:left; padding-left:10px;}
+.tree_box .active{ background:#f8f8f8 url(../images/tree_active.png) no-repeat left 0; color:#2a6496; }
+.tree_box .sub_active{ background:#f8f8f8 url(../images/tree_active.png) no-repeat left 0; color:#2a6496; position:relative; }
+.tree_box .sub_active:hover{ background:#f8f8f8 url(../images/tree_active.png) no-repeat left 0; color:#2a6496; }
+.tree_box .sub_active:after{ display: block;content: "";position: absolute; right:0;top: 4px;border: 8px solid transparent;border-width: 14px 8px;border-right-color: #2b7dbc;}
+.tree_sbox{ display:none;}
+.tree_show{ display:block;}
+
+.tree_fir{ display:block; width:180px; height:39px; background:#f8f8f8; position:relative; color:#585858; cursor:pointer; line-height:39px; border-bottom:1px solid #e5e5e5; border-top:1px solid #e5e5e5; margin-top:-1px; position:relative;}
+.has_sub{ display: block;content: "";position: absolute;right: 0;top: 6px;border: 8px solid transparent;border-width: 14px 10px;border-right-color: #2b7dbc;}
+/*二级*/
+.tree_box .tree_sec{display:block; height:36px; line-height:36px;  position:relative; color:#585858; cursor:pointer;  margin-top:-1px;   text-align:left; padding-left:37px;}
+.tree_box .tree_sec i{ font-size:12px;}
+
+.menu_slide{ position:absolute; right:20px; top:11px; font-size:18px;}
+.menu-icon { display: inline-block;min-width: 30px;margin-right: 2px;vertical-align: sub;text-align: center;font-size: 18px;font-weight: 400;}
+.menu-icon-sec { display: inline-block;min-width: 30px;margin-right: 2px;text-align: center;font-size: 18px;font-weight: 400;}
+.tree_fir:hover{  background:#f8f8f8 url(../images/tree_active.png) no-repeat left 0; color:#2a6496;}
+.tree_fir_bor{ display:none; content: ""; position: absolute; top: -1px;left: 0;z-index: 1;height: 41px;width: 3px;max-width: 3px;overflow: hidden;background-color: #629cc9;}
+.tree_box_sec{}
+.tree_sbox_sec{ display:none;}
+.tree_sec:hover{ background:#e5e5e5;}
+.tree_sbox_sec a{ padding-left:50px;}
+
+
+.tree_sub{ display:block; margin:0 0 0 0px; line-height:36px; color:#434343; cursor:pointer;}
+
+.tree_sub:hover{ color:#4b88b7; background:#f1f5fd;}
+.ts_active{ color:#36F; font-weight:bold;}
+
+
+
+/*二级内容树*/
+.tree_nav{ position: relative;z-index: auto;border-bottom: 1px solid #ddd;height: 40px;line-height: 40px;padding: 0 12px 0 10px;color: #2679b5;margin-bottom: 10px;font-weight: bold;font-size: 14px; text-align:center; background:#f8f8f8;}
+
+
+

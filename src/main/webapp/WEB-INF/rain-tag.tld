@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="/xml/ns/javaee" xmlns:xsi="/2001/XMLSchema-instance"
+	xsi:schemaLocation="/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	<display-name>Rainsponsor's custom tags</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>Rainsponsor</short-name>
+	<uri>http://rainsponsor.com/tags</uri>
+
+	<!-- 整个部门树 -->
+	<tag-file>
+		<name>orgtree</name>
+		<path>/META-INF/tags/orgtree.tag</path>
+	</tag-file>
+	<!-- 整个部门中人员树 -->
+	<tag-file>
+		<name>usertree</name>
+		<path>/META-INF/tags/usertree.tag</path>
+	</tag-file>
+	<!-- 静态资源文件标签 -->
+	<tag-file>
+		<name>staticfile</name>
+		<path>/META-INF/tags/staticres.tag</path>
+	</tag-file>
+	
+	<tag>
+      <name>select</name>
+      <tag-class>com.plate.frame.base.tags.SelectTag</tag-class>
+      <body-content>empty</body-content>
+      <description><![CDATA[显示数组字典的select]]></description>
+      <attribute>
+         <name>id</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      <attribute>
+         <name>value</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      <attribute>
+         <name>option</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <description><![CDATA[用户自定义选项]]></description>
+      </attribute>
+      <attribute>
+         <name>cssClass</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      <attribute>
+         <name>parentDicId</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+         <description><![CDATA[要获取的选项列表的父ID]]></description>
+      </attribute>
+   </tag>
+	<tag>
+      <name>dictext</name>
+      <tag-class>com.plate.frame.base.tags.DicTextTag</tag-class>
+      <body-content>empty</body-content>
+      <description><![CDATA[显示数组字典的text]]></description>
+      <attribute>
+         <name>id</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      <attribute>
+         <name>value</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      <attribute>
+         <name>parentDicId</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+         <description><![CDATA[要获取的选项列表的父ID]]></description>
+      </attribute>
+   </tag>
+</taglib>

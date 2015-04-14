@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*图片上传imageshow.html*/
+
+.image_show{ padding-bottom:10px; float:left;}
+.image_box{ float:left; width:87px; height:67px; border:1px solid #d3d3d3; position:relative; padding:7px 0 0 7px; margin-right: 10px; background:#fff; cursor:pointer; margin-bottom:10px;}
+.image_box img{ width:80px; height:60px;}
+.image_box_fm{ cursor:pointer; width:94px; height:20px; line-height:20px; position:absolute; top:30px; left:0; background:url(../images/tm_hei.png) repeat; text-align:center; font-size:12px; color:#fff;  display:none;}
+.image_box_close {
+position: absolute;
+display: block;
+width: 14px;
+height: 14px;
+right: -6px;
+top: -6px;
+text-indent: -9999px;
+overflow: hidden;
+background:url(../images/image_show.png) no-repeat -100px -182px;
+}
