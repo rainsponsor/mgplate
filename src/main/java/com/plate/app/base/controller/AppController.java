@@ -18,6 +18,7 @@ public class AppController{
 	
 	@RequestMapping("/start")
 	public String appStartPage(){
+		//Test github
 		return "app/appStartPage";
 	}
 	
